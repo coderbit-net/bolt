@@ -18,7 +18,7 @@ var gulp        = require('gulp'),                      // main gulp file
 //variables
 var outputDir = 'build/';
 var AUTOPREFIXER_BROWSERS = [
-    'ie >= 8',
+    'ie >= 7',
     'ie_mob >= 10',
     'ff >= 30',
     'chrome >= 34',
@@ -54,7 +54,7 @@ gulp.task('glueJs', function() {
 gulp.task ('sass', function() {
     var config = {};
     // development
-        config.sourceComments = 'map';
+    //    config.sourceComments = 'map';
     // production
     //    config.outputStyle = 'compressed';
 
