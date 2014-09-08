@@ -13,7 +13,7 @@ html
             div.container
                 div.top
                     div.top-logo
-                        img(src="img/Bolt_logo.png")
+                        img(src="img/Bolt_logo.png" alt="logo")
                     h1
                         span.bold GREAT COVERAGE <br>
                         span.light GREAT PRICE <br>
@@ -29,33 +29,81 @@ html
                         div.do-block
                             b Buy the right policy
                             span A licensed insurance agent can help you choose the policy that’s right for your business
+                // hidden layers
+                div.hover
+                    div.top-logo_hover
+                        img(src="img/Bolt_logo.png" alt="logo")
+                    div.opt-landscape.optHover
+                        img(src='img/bg_hover.jpg')
+                        div.description
+                            h4.description-title  Landscaper
+                            p.description-text  Performing work on others premises opens your lawn care business up to unique risks, especially concerning the clients' property. A Liability policy can cover other's property while it is in your care or custody. So if one of your employees accidentally destroys a sprinkler system and a client sues for replacement or repair expenses, your policy could cover the repair and legal fees associated with the covered claim.
+                    div.opt-electician.optHover
+                        img(src='img/bg_hover.jpg')
+                        div.description
+                            h4.description-title  Electricians
+                            p.description-text  In the event a homeowner or business client sues you for personal injury or property damage, general liability insurance would cover the damages and well as the defense costs. To illustrate, suppose you installed new wiring in a client’s establishment, which shorts, causes a fire, and results in extensive damage to the client’s property. But if you had general liability as part of your electrician insurance package, you would be covered for damages in accordance with your policy terms. Further, if you’re an electrical contractor working on a client’s site, your client may require you to have general liability insurance.
+                    div.opt-painter.optHover
+                        img(src='img/bg_hover.jpg')
+                        div.description
+                            h4.description-title  Painting
+                            p.description-text  The most basic of insurance policies for painting contractors is the general liability policy. General liability offers protection from financial burden as a result of bodily injury or property damage that can occur during the painting contractor’s job. For example, if they have an employee who accidentally knocks over a paint can that ruins a piece of furniture not properly protected with a drop cloth, the homeowner can sue the painting contractor’s business. General liability offers financial protection for that type of occurrence.
+                    div.opt-plumber.optHover
+                        img(src='img/bg_hover.jpg')
+                        div.description
+                            h4.description-title  Plumbers
+                            p.description-text  General liability insurance, or GL, is a fundamental part of plumbing insurance. It could provide protection against lawsuits and other financial liabilities that result from things like accidents or other mishaps.
+                    div.opt-heating.optHover
+                        img(src='img/bg_hover.jpg')
+                        div.description
+                            h4.description-title  Heating & A/C
+                            p.description-text  A variety of risks are associated with running a heating and A/C contractors’ insurance policy, many of which can be protected with general liability insurance. Included in your general liability policy is coverage for completed operations, products liability, and premises liability. For instance, if you client incurs damage caused by the repairs you completed, the costs associated are covered by completed operations. Products liability is coverage against any products you sell your clients, such as a cleaning agent that caused an allergic reaction. With premises liability, you’re protected against bodily injury that might occur in your office.
+                    div.opt-general.optHover
+                        img(src='img/bg_hover.jpg')
+                        div.description
+                            h4.description-title  General Liability
+                            p.description-text  General liability insurance, also referred to as commercial general liability insurance, is one of the most common types of small business insurance. General liability insurance provides broad coverage for the small business owner and is a foundation for small business insurance.
+                                .This insurance covers certain losses resulting from property damage, suspended operations and liability resulting from bodily injury or property damage to others.
+
                 div.cover
                     h3  SELECT A COVERAGE BELOW TO GET STARTED!
                     div.cover-options
                         div.opt
-                            img(src="img/landscape.png" alt="")
-                            a(href="#") landscaper
-                                span >
+                            a(href="#").opt-link#opt-landscape
+                                img(src="img/landscape.png" alt="")
+                                span.click click to <br> get started
+                                span.title landscaper
+                                    span.arr >
                         div.opt
-                            img(src="img/electician.png" alt="")
-                            a(href="#") electician
-                                span >
+                            a(href="#").opt-link#opt-electician
+                                img(src="img/electrician.png" alt="")
+                                span.click click to <br> get started
+                                span.title electician
+                                    span.arr >
                         div.opt
-                            img(src="img/painter.png" alt="")
-                            a(href="#") painters
-                                span >
+                            a(href="#").opt-link#opt-painter
+                                img(src="img/painter.png" alt="")
+                                span.click click to <br> get started
+                                span.title painters
+                                    span.arr >
                         div.opt
-                            img(src="img/plumber.png" alt="")
-                            a(href="#") plumber
-                                span >
+                            a(href="#").opt-link#opt-plumber
+                                img(src="img/plumber.png" alt="")
+                                span.click click to <br> get started
+                                span.title plumber
+                                    span.arr >
                         div.opt
-                            img(src="img/heating.png" alt="")
-                            a(href="#") heating & a/c
-                                span >
+                            a(href="#").opt-link#opt-heating
+                                img(src="img/heating.png" alt="")
+                                span.click click to <br> get started
+                                span.title heating & a/c
+                                    span.arr >
                         div.opt
-                            img(src="img/general.png" alt="")
-                            a(href="#") general liability
-                                span >
+                            a(href="#").opt-link#opt-general
+                                img(src="img/general.png" alt="")
+                                span.click click to <br> get started
+                                span.title general liability
+                                    span.arr >
 
 
 
