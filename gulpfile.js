@@ -4,7 +4,7 @@
 var gulp        = require('gulp'),                      // main gulp file
 	jade        = require('gulp-jade'),                 // jade to convert html
     //inject      = require("gulp-inject"),               // injection plugin for Gulp
-    //concat      = require('gulp-concat'),               // concatenates files
+    concat      = require('gulp-concat'),               // concatenates files
     //browserify  = require('browserify'),                // to process JS
     //source      = require('vinyl-source-stream'),       // to translate from browserify to what gulp understands
     //streamify   = require('gulp-streamify'),            // buffer all content to use it in uglify
@@ -45,10 +45,6 @@ gulp.task('js', function () {
 
 gulp.task('glueJs', function() {
     gulp.src([
-        './src/js/includes/responsive-nav.js',
-        './src/js/includes/easings.min.js',
-        './src/js/includes/fullPage.min.js',
-        './src/js/includes/animations.js',
         './src/js/main.js'
     ])
         .pipe(concat('main.js'))
@@ -58,9 +54,9 @@ gulp.task('glueJs', function() {
 gulp.task ('sass', function() {
     var config = {};
     // development
-        config.sourceComments = 'map';
+    //    config.sourceComments = 'map';
     // production
-        //config.outputStyle = 'compressed';
+        config.outputStyle = 'compressed';
 
     return gulp.src('src/sass/main.scss')
         .pipe(sass(config))
@@ -70,7 +66,7 @@ gulp.task ('sass', function() {
 
 gulp.task('images', function() {
     return gulp.src('./src/img/**/*')
-        .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
+        //.pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
         .pipe(gulp.dest(outputDir + '/img'))
 });
 
